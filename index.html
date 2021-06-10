@@ -7,69 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <form>
-            <label>
-                <span>понедельник</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Mon" checked/>
-            </label>
-            <label>
-                <span>вторник</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Tue"/>
-            </label>
-            <label>
-                <span>среда</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Wed"/>
-            </label>
-            <label>
-                <span>четверг</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Thu"/>
-            </label>
-            <label>
-                <span>пятница</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Fri"/>
-            </label>
-            <label>
-                <span>суббота</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Sut" disabled/>
-            </label>
-            <label>
-                <span>воскресенье</span>
-                <input class="custom-input hidden" type="checkbox" name="weekday" value="Sun" disabled checked/>
-            </label>
-            <button type="reset">Отмена</button>
-        </form>
-        <form>
-            <label>
-                <span>понедельник</span>
-                <input class="custom-input hidden" type="radio" name="week" value="Mo" checked/>
-            </label>
-            <label>
-                <span>вторник</span>
-                <input class="custom-input hidden" type="radio" name="week" value="Tu"/>
-            </label>
-            <label>
-                <span>среда</span>
-                <input class="custom-input hidden" type="radio" name="week" value="We"/>
-            </label>
-            <label>
-                <span>четверг</span>
-                <input class="custom-input hidden" type="radio" name="week" value="Thu"/>
-            </label>
-            <label>
-                <span>пятница</span>
-                <input class="custom-input hidden" type="radio" name="week" value="Thu" />
-            </label>
-            <label>
-                <span>суббота</span>
-                <input class="custom-input hidden" type="radio" name="weekend" value="Sut" disabled/>
-            </label>
-            <label>
-                <span>воскресенье</span>
-                <input class="custom-input hidden" type="radio" name="weekend" value="Sun" disabled checked/>
-            </label>
-            <button type="reset">Отмена</button>
-        </form>
-    </div> 
+    <form action="javascript:void(0);">
+        <select class="select-custom">
+            <optgroup label="Developer">
+                <option value="frontend">Frontend</option>
+            </optgroup>
+            <optgroup label="Base skills">
+                <option value="html" selected>HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="Frameworks" disabled>
+                <option value="vue">Vue</option>
+                <option value="react">React + GraphQL</option>
+                <option value="angular">Angular</option>
+            </optgroup>
+        </select>
+        <button type="submit">Отправить</button>
+        <button type="reset">Обновить</button>
+    </form>
 </body>
 </html>
